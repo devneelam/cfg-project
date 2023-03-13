@@ -15,6 +15,36 @@ nav {
   cursor: pointer;
 }
 
+.landing-img-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+
+.landing-img {
+  width: 200px;
+  height: 200px;
+}
+
+.landing-polaroid {
+  background-color: white;
+  padding: 15px 15px 50px 15px;
+  border-radius: 10px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-polaroid span {
+  padding-top: 20px;
+  font-weight: bolder;
+}
+
+.polaroid-title {
+  font-size: 20px;
+}
+
 .navbar-link:hover {
   background-color: #f3aeac;
   border-radius: 15px;
@@ -22,5 +52,10 @@ nav {
 
 h1 {
   display: flex;
-  justify-content: center;
+  margin-left: 20px;
+  padding-top: 50px;
+}
+
+.border {
+  border: 3px solid black;
 }

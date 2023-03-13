@@ -50,11 +50,16 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: transform 0.5s;
 }
 
 .landing-polaroid span {
   padding-top: 20px;
   font-weight: bolder;
+}
+
+.landing-polaroid:hover {
+  transform: scale(1.2);
 }
 
 .polaroid-title {

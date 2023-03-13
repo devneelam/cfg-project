@@ -1,0 +1,26 @@
+body {
+  background-color: #f5e1e1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.navbar-link:hover {
+  background-color: #f3aeac;
+  border-radius: 15px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}

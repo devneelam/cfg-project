@@ -2,10 +2,15 @@ body {
   background-color: #f5e1e1;
 }
 
+#navbar-container {
+  display: flex;
+  align-items: center;
+}
+
 nav {
   display: flex;
   justify-content: space-evenly;
-  padding: 15px;
+  flex: 1;
 }
 
 .navbar-link {
@@ -13,6 +18,17 @@ nav {
   color: black;
   padding: 8px 16px;
   cursor: pointer;
+}
+
+.navbar-link:hover {
+  background-color: #f3aeac;
+  border-radius: 15px;
+}
+
+#navbar-container img {
+  width: 60px;
+  height: 70px;
+  padding: 8px 16px;
 }
 
 .landing-img-container {
@@ -43,11 +59,6 @@ nav {
 
 .polaroid-title {
   font-size: 20px;
-}
-
-.navbar-link:hover {
-  background-color: #f3aeac;
-  border-radius: 15px;
 }
 
 h1 {

@@ -21,6 +21,7 @@ body {
 
 #navbar-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding-bottom: 50px;
 }
@@ -28,7 +29,17 @@ body {
 nav {
   display: flex;
   justify-content: space-evenly;
-  flex: 1;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 600px) {
+  #navbar-container {
+    flex-direction: row;
+  }
+
+  nav {
+    flex: 1;
+  }
 }
 
 .navbar-link {
@@ -77,6 +88,7 @@ nav {
   flex-direction: column;
   align-items: center;
   transition: transform 0.5s;
+  align-self: center;
 }
 
 .landing-polaroid span {
@@ -101,8 +113,18 @@ nav {
 /* RECIPE PAGE BELOW */
 .recipe-container {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   margin-bottom: 20px;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .recipe-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: initial;
+  }
 }
 
 .recipe-card {
@@ -150,6 +172,7 @@ nav {
   padding-bottom: 8px;
   border: 1px solid black;
   display: flex;
+  margin: 16px;
 }
 
 /* PRODUCTS PAGE BELOW */
@@ -162,8 +185,13 @@ nav {
   background-color: white;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
-  width: 500px;
   padding: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  #product-box {
+    width: 500px;
+  }
 }
 
 #product-box-shadow {
@@ -184,12 +212,18 @@ nav {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 400;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  #product-box {
+    width: 500px;
+  }
 }
 
 .product {
   display: flex;
   justify-content: center;
-  font-size: 28px;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -197,11 +231,19 @@ nav {
 .product-info {
   text-align: center;
   padding-bottom: 16px;
-  font-size: 17px;
   font-weight: 200;
   padding-left: 32px;
   padding-right: 32px;
   font-family: "Roboto Mono", monospace;
+}
+
+@media only screen and (min-width: 768px) {
+  .product {
+    font-size: 28px;
+  }
+  .product-info {
+    font-size: 17px;
+  }
 }
 
 .product-info a {

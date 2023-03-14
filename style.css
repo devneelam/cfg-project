@@ -52,7 +52,15 @@ nav {
 
 .landing-img-container {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .landing-img-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .landing-img {
@@ -64,7 +72,7 @@ nav {
   background-color: white;
   padding: 15px 15px 50px 15px;
   border-radius: 10px;
-  margin: 0 10px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -263,3 +271,26 @@ nav {
 #contact-submit-box-shadow:active {
   padding: 0;
 }
+
+/* Extra small devices (tiny phones like iPhone 4, 600px and down)*/
+/* @media only screen and (max-width: 600px) {
+} */
+
+/* Small devices (portrait tablets and large phones like iPhone 14 Pro Max, 600px and up)*/
+/* @media only screen and (min-width: 600px) {
+} */
+
+/* Medium devices (landscape tablets, like iPad, 768px and up)*/
+/* @media only screen and (min-width: 768px) {
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+} */
+
+/* Todo: Media Query */
+/* Todo: JavaScript Recipes,    */

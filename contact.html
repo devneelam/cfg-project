@@ -4,11 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>The Desserts Company</title>
 </head>
 
 <body>
+    <div id="navbar-container">
+        <a>
+            <img src="./images/logo.png" alt="the dessert factory">
+        </a>
+        <nav>
+            <a class="navbar-link" href="./index.html">
+                Home
+            </a>
+            <a class="navbar-link" href="./recipe.html">
+                Recipes
+            </a>
+            <a class="navbar-link" href="./products.html">
+                Products
+            </a>
+            <a class="navbar-link" href="./contact.html">
+                Contact
+            </a>
+        </nav>
+    </div>
+    <h1 id="contact-form-title">Contact me</h1>
 
+    <div class="contact-form">
+        <h2 id="contact-form-header">Send me a message</h2>
+        <div class="contact-form-items">
+            <form>
+                <div class="contact-form-items">
+                    <span class="contact-form-label"><label for="name">Name</label></span>
+                    <div class="contact-form-box-shadow">
+                        <input type="text" id="name" name="yourname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="contact-form-items">
+                    <span class="contact-form-label"><label for="email">Email</label></span>
+                    <div class="contact-form-box-shadow">
+                        <input type="text" id="email" name="email" placeholder="Your email..">
+                    </div>
+                </div>
+                <div class="contact-form-items">
+                    <span class="contact-form-label"><label for="subject">Subject</label></span>
+                    <div class="contact-form-box-shadow">
+                        <input type="text" id="subject" name="subject" placeholder="Enter here..">
+                    </div>
+                </div>
+                <div class="contact-form-items">
+                    <span class="contact-form-label"><label for="message">Message</label></span>
+                    <div class="contact-form-box-shadow">
+                        <input type="text" id="message" name="message" placeholder="Enter here..">
+                    </div>
+                    <div id="contact-submit-box-shadow"><button id="contact-submit">Submit</button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    By Phone
+
+    Send me a message
+
+    Email
 </body>
 
 </html>

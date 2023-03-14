@@ -1,3 +1,19 @@
+/* RESET MARGINS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* HELPER */
+.border {
+  border: 3px solid black;
+}
+
 body {
   background-color: #f5e1e1;
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
@@ -70,13 +86,11 @@ nav {
 
 #landing-title {
   display: flex;
-  margin: 0;
   margin-left: 20px;
   padding-bottom: 50px;
 }
 
 /* RECIPE PAGE BELOW */
-
 .recipe-container {
   display: flex;
   justify-content: space-evenly;
@@ -114,12 +128,7 @@ nav {
   border: 1px solid black;
 }
 
-h3 {
-  margin: 0;
-}
-
 /* PRODUCTS PAGE BELOW */
-
 #product-container {
   display: flex;
   justify-content: center;
@@ -146,7 +155,6 @@ h3 {
   background-color: #f3aeac;
   border: 1px solid black;
   height: fit-content;
-  margin: 0;
   margin-bottom: 25px;
   padding: 8px 10px;
   text-transform: uppercase;
@@ -177,10 +185,65 @@ h3 {
   font-weight: 500;
 }
 
-p {
-  margin: 0;
+/* CONTACT PAGE BELOW */
+#contact-form-title {
+  display: flex;
+  margin-left: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
 }
 
-.border {
-  border: 3px solid black;
+#contact-form-header {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.contact-form-items input {
+  padding: 8px 8px;
+  width: 300px;
+  border: none;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.contact-form-label {
+  padding-right: 10px;
+}
+
+.contact-form-box-shadow {
+  background-color: #f3aeac;
+  border: 1px solid black;
+  padding-right: 5px;
+  padding-bottom: 3px;
+}
+
+#contact-submit {
+  background-color: white;
+  padding: 5px 12px;
+  border: none;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+#contact-submit-box-shadow {
+  background-color: #f3aeac;
+  border: 1px solid black;
+  padding-right: 2px;
+  padding-bottom: 1px;
+  margin-top: 20px;
+}
+
+#contact-submit-box-shadow:active {
+  padding: 0;
 }
